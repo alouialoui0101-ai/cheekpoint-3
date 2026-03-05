@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boutique en ligne</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS personnalisé -->
+    <style>
+        /* ---------- Styles généraux ---------- */
+        
+        body {
+            font-family: animation: name 1s linear;
+            : : -webkit-search-results-decoration: 0;
+            padding: 0;
+        }
+        /* ---------- Header ---------- */
+        
+        header {
+            background-color: #1f1156;
+            color: re209c9gb(47, 5, 235);
+            padding: 20px 0;
+        }
+        
+        header a {
+            color: crimson;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+        
+        header a:hover {
+            text-decoration: underline;
+        }
+        /* ---------- Hero Section ---------- */
+        
+        .hero {
+            background: url('https://images.unsplash.com/photo-1606813908662-521d1f8d0ff7') center/cover no-repeat;
+            height: 50vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            text-align: center;
+        }
+        
+        .hero h1 {
+            font-size: 3rem;
+            text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.327);
+        }
+        /* ---------- Section Produits ---------- */
+        
+        .products {
+            padding: 50px 0;
+        }
+        
+        .products h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        
+        .card {
+            margin-bottom: 30px;
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: scale(1.05);
+        }
+        
+        .card img {
+            height: 200px;
+            object-fit: cover;
+        }
+        /* ---------- Footer ---------- */
+        
+        footer {
+            background-color: #222;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        /* ---------- Réactivité ---------- */
+        
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- ---------- Header ---------- -->
+    <header>
+        <div class="container d-flex justify-content-between align-items-center">
+            <h2>Boutique</h2>
+            <nav>
+                <a href="#products">Produits</a>
+                <a href="#about">À propos</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ---------- Hero Section ---------- -->
+    <section class="hero">
+        <div>
+            <h1>Découvrez nos produits exclusifs</h1>
+            <p>Des articles de qualité à portée de main</p>
+            <a href="#products" class="btn btn-warning btn-lg mt-3">Voir les produits</a>
+        </div>
+    </section>
+
+    <!-- ---------- Section Produits ---------- -->
+    <section id="products" class="products container">
+        <h2>Nos Produits</h2>
+        <div class="row">
+            <!-- Produit 1 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://www.ducatillon.fr/15222-large_default/sac-a-dos-keiler-hunter-compartiment-double-logo-1.jpg" class="card-img-top" alt="Produit 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Sac à dos</h5>
+                        <p class="card-text">Un sac à dos pratique et stylé pour toutes vos aventures.</p>
+                        <a href="#" class="btn btn-primary">Acheter maintenant</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 2 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://tse4.mm.bing.net/th/id/OIP.ruEyk3qmbASMFi65mlET0gHaHa?pid=Api&h=220&P=0" class="card-img-top" alt="Produit 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Montre élégante</h5>
+                        <p class="card-text">Une montre moderne qui complète votre style quotidien.</p>
+                        <a href="#" class="btn btn-primary">Acheter maintenant</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 3 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://tse1.mm.bing.net/th/id/OIP.J1i7sbj07NqUflQeO69BAAHaFP?pid=Api&h=220&P=0" class="card-img-top" alt="Produit 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Chaussures sport</h5>
+                        <p class="card-text">Chaussures confortables pour vos activités quotidiennes.</p>
+                        <a href="#" class="btn btn-primary">Acheter maintenant</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Produit 4 -->
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://tse2.mm.bing.net/th/id/OIP.jbT8Zub5PTRzjHC-4OcACgHaHa?pid=Api&h=220&P=0" class="card-img-top" alt="Produit 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Casque audio</h5>
+                        <p class="card-text">Profitez d’un son cristallin avec ce casque élégant.</p>
+                        <a href="#" class="btn btn-primary">Acheter maintenant</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------- Footer ---------- -->
+    <footer>
+        <p>© 2026 Boutique en ligne. Tous droits réservés.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
